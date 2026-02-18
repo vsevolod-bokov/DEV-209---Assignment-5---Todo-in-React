@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Serve static files from 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'todo-react', 'dist')));
 
 // Enable CORS for all routes
 app.use(cors({
